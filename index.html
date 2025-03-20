@@ -18,6 +18,11 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        img {
+        max-width: 100%;    /* 防止图片溢出 */
+        border-radius: 8px;  /* 圆角效果 */
+        margin: 15px 0;      /* 上下边距 */
+    }
     </style>
 </head>
 <body>
@@ -28,11 +33,12 @@
 
     <script>
         // 预存的100条祝福内容（可自定义修改！）
+        // 删除文字条目，全部使用图片链接
         const messages = [
-            "你是夜空中最亮的星，愿每一天都光芒万丈 ✨",
-            "生活像巧克力盒，你永远不知道下一颗有多甜 🍫",
-            "愿所有努力终有回报，所有等待终有回响 🌈",
-            // 在此继续添加更多内容...
+            '<img src="https://raw.githubusercontent.com/tsuki-saki/greeting-card/449cb2f573cd95d16c31100af0550f7c660d210d/images/QQ%E5%9B%BE%E7%89%8720231026123842.jpg">',
+            '<img src="https://raw.githubusercontent.com/tsuki-saki/greeting-card/449cb2f573cd95d16c31100af0550f7c660d210d/images/QQ%E5%9B%BE%E7%89%8720231117133916.jpg">',
+            '<img src="https://raw.githubusercontent.com/tsuki-saki/greeting-card/449cb2f573cd95d16c31100af0550f7c660d210d/images/QQ%E5%9B%BE%E7%89%8720231224184126.jpg">'
+            // ...
         ];
 
         // 随机选择一条内容
