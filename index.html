@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>神秘贺卡</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f0f0f0;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>🎉 专属祝福已送达！</h1>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        // 预存的100条祝福内容（可自定义修改！）
+        const messages = [
+            "你是夜空中最亮的星，愿每一天都光芒万丈 ✨",
+            "生活像巧克力盒，你永远不知道下一颗有多甜 🍫",
+            "愿所有努力终有回报，所有等待终有回响 🌈",
+            // 在此继续添加更多内容...
+        ];
+
+        // 随机选择一条内容
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        document.getElementById("message").innerHTML = messages[randomIndex];
+    </script>
+</body>
+</html>
